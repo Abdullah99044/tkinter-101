@@ -6,12 +6,11 @@ from tkinter.messagebox import showerror, showwarning, showinfo
 
 window = tkinter.Tk()
 
-wordsList = ["Money" , "Trip" , "Car" , "House" , "Job" , "Gold" , "Your dream!" , "Trip to the moon" , "Met your idol!" , "Become an actor in a movie"]
 
 def wordChoice():
-    global wordsList
+    wordsList = ["Money" , "Trip" , "Car" , "House" , "Job" , "Gold" , "Your dream!" , "Trip to the moon" , "Met your idol!" , "Become an actor in a movie"]
+
     random_word = random.choice(wordsList)
-    print("Congratulations, you grabbed an {}!".format(random_word))
     showinfo("Congratulations" , "Congratulations, you grabbed  {}!".format(random_word) )
     wordsList.remove(random_word)
 

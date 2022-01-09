@@ -23,7 +23,6 @@ def func1():
         
         x+=50
         y+=50
-        print(i)
         for i in range(1):
             window.update()
             window.after(2000 , window.config(bg=color) , window.geometry("{}x{}".format(x , y )) )
@@ -45,5 +44,5 @@ window.after(200 ,func1)
  
 
 
-for i in range(3):
-    window.mainloop()
+ 
+window.mainloop()
